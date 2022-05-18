@@ -33,11 +33,14 @@ def main():
     try:
         float_enter = float(float_string)
         decimal_places = int(decimal_places_string)
-        some_number.append(float_enter)
-        some_number.append(decimal_places)
-        # call functions
-        decimal_answer = Decimal_Round(some_number)
-        print("The rounded number is {}.".format(decimal_answer))
+        if decimal_places >= 0:
+            some_number.append(float_enter)
+            some_number.append(decimal_places)
+            # call functions
+            decimal_answer = Decimal_Round(some_number)
+            print("The rounded number is {}.".format(decimal_answer))
+        else:
+            print("Please do not enter a negative decimal places!")
     except Exception:
         print("Invalid number!")
     finally:
