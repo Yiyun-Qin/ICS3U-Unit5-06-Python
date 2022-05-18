@@ -40,7 +40,7 @@ def main():
             decimal_answer = Decimal_Round(some_number)
             print("The rounded number is {}.".format(decimal_answer))
         else:
-            print("Please do not enter a negative decimal places!")
+            print("Please do not enter negative decimal places!")
     except Exception:
         print("Invalid number!")
     finally:
