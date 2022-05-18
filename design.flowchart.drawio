@@ -4,32 +4,50 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="63" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="62">
+                <mxCell id="63" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="62" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="180" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="180" y="440" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="180" y="740" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="65" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="62" target="64">
+                <mxCell id="65" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="62" target="64" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" value="pass base_integer and height_integer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                <mxCell id="62" value="pass some_number&lt;br&gt;(some_number = [float_enter, decimal_places]" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="150" y="100" width="160" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="64" target="66">
+                <mxCell id="69" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="64" target="68">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="64" value="area = 1 / 2 * base_integer * height_integer" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                <mxCell id="64" value="number_1 = some_number[0] * pow(10, some_number[1])" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="145" y="220" width="170" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="68" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="66" target="8">
+                <mxCell id="71" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="68" target="70">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="66" value="Print &quot;The area of the &lt;br&gt;triangle is area.&quot;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
-                    <mxGeometry x="130" y="330" width="200" height="70" as="geometry"/>
+                <mxCell id="68" value="number_2 = number_1 + 0.5" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="320" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="70" target="72">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="number_3 = int(number_2)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="420" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="72" target="74">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="decimal_answer = number_3 * pow(10, some_number[1] * -1)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="520" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="74" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="return decimal_answer" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="630" width="170" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
