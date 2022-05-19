@@ -12,10 +12,7 @@ def Decimal_Round(some_number):
     number_1 = some_number[0] * pow(10, some_number[1])
     number_2 = number_1 + 0.5
     number_3 = int(number_2)
-    decimal_answer = number_3 * pow(10, some_number[1] * -1)
-
-    # output
-    return decimal_answer
+    some_number[0] = number_3 * pow(10, some_number[1] * -1)
 
 
 def main():
@@ -37,8 +34,8 @@ def main():
             some_number.append(float_enter)
             some_number.append(decimal_places)
             # call functions
-            decimal_answer = Decimal_Round(some_number)
-            print("The rounded number is {}.".format(decimal_answer))
+            Decimal_Round(some_number)
+            print("The rounded number is {}.".format(some_number[0]))
         else:
             print("Please do not enter negative decimal places!")
     except Exception:
