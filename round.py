@@ -5,7 +5,7 @@
 # This is the math program, rounding the decimal numbers
 
 
-def Decimal_Round(some_number):
+def DecimalRound(some_number):
     # This function rounds the decimal
 
     # process
@@ -34,7 +34,7 @@ def main():
             some_number.append(float_enter)
             some_number.append(decimal_places)
             # call functions
-            Decimal_Round(some_number)
+            DecimalRound(some_number)
             print("The rounded number is {}.".format(some_number[0]))
         else:
             print("Please do not enter negative decimal places!")
